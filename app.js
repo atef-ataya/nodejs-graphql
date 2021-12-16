@@ -23,7 +23,7 @@ const fileStorage = multer.diskStorage({
   },
 });
 
-//Fileter files based on types
+//Fileter files based on types of the attachment
 const fileFilter = (req, file, cb) => {
   if (
     file.mimetype === 'image/png' ||
